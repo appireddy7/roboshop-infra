@@ -28,7 +28,7 @@ resource "aws_instance" "ec2" {
       "sudo bash ${var.component}.sh"
       ]
     }
-  }
+
 
 resource "aws_security_group" "sg" {
   name        = "${var.component}-${var.env}-sg"
