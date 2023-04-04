@@ -24,7 +24,7 @@ resource "aws_instance" "ec2" {
        inline = [
          "git clone https://github.com/appireddy7/Roboshop-shell",
          "cd Roboshop-shell",
-         "sudo bash ${var.component}.sh"
+         "sudo bash ${var.component}.sh ${var.password}"
        ]
      }
    }
@@ -68,4 +68,4 @@ variable "instance_type" {}
 variable "env" {
   default = "dev"
 }
-
+variable "password" {}
