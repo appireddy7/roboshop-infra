@@ -20,14 +20,14 @@ resource "aws_instance" "ec2" {
          user     = "centos"
          password = "DevOps321"
        }
-     }
 
-    inline = [
-      "git clone https://github.com/appireddy7/Roboshop-shell",
-      "cd Roboshop-shell",
-      "sudo bash ${var.component}.sh"
-      ]
-    }
+       inline = [
+         "git clone https://github.com/appireddy7/Roboshop-shell",
+         "cd Roboshop-shell",
+         "sudo bash ${var.component}.sh"
+       ]
+     }
+   }
 
 
 resource "aws_security_group" "sg" {
