@@ -6,7 +6,7 @@ variable "instances" {
     }
     mongodb    = {
       name    = "mongodb"
-      type    = "t3.micro"
+      type    = "t3.small"
     }
     catalogue    = {
       name    = "catalogue"
