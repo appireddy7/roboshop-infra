@@ -14,7 +14,7 @@ variable "instances" {
     }
     redis   = {
       name    = "redis"
-      type    = "t3.micro"
+      type    = "t3.small"
     }
     user   = {
       name    = "user"
