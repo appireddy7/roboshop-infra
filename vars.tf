@@ -2,7 +2,7 @@ variable "instances" {
   default     = {
     frontend = {
       name    = "frontend"
-      type    = "t3.micro"
+      type    = "t3.small"
     }
     mongodb    = {
       name    = "mongodb"
@@ -26,7 +26,7 @@ variable "instances" {
     }
     mysql    = {
       name    = "mysql"
-      type    = "t3.micro"
+      type    = "t3.small"
       password = "RoboShop@1"
     }
     shipping    = {
